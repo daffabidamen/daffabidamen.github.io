@@ -422,7 +422,7 @@ var $main = $('.main');
 		popupLoaderText: '',
 		popupSpeed: 300,
 		popupWidth: 150,
-		selector: '.thumb > a.image',
+		selector: '.thumb > a.image, .thumb2 > a.image',
 		usePopupCaption: true,
 		usePopupCloser: true,
 		usePopupDefaultStyling: false,
