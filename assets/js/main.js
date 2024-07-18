@@ -442,3 +442,25 @@ var $main = $('.main');
 		});
 
 })(jQuery);
+
+const music = document.getElementById('background-music');
+const button = document.getElementById('float-button-music');
+
+// Mengatur volume menjadi 50%
+music.volume = 0.15;
+
+// Memulai musik saat halaman dimuat
+window.onload = function() {
+	music.play();
+};
+
+// Fungsi untuk pause dan play musik
+button.addEventListener('click', function() {
+	if (music.paused) {
+		music.play();
+		button.innerHTML = '<i class="icon solid fa-pause"></i>';
+	} else {
+		music.pause();
+		button.innerHTML = '<i class="icon solid fa-play"></i>';
+	}
+});
